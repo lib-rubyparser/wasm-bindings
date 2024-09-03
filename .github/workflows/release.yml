@@ -34,13 +34,13 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with: { name: web-lib-ruby-parser.js }
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with: { name: web-lib-ruby-parser.wasm }
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with: { name: nodejs-lib-ruby-parser.js }
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with: { name: nodejs-lib-ruby-parser.wasm }
 
       - name: show artifacts
